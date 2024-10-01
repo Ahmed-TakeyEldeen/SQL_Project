@@ -1,7 +1,7 @@
 SELECT 
     skills,
     ROUND(AVG(salary_year_avg),1) AS avg_salary,
-    COUNT()
+    COUNT(*) AS skill_count
 FROM 
     job_postings_fact
 INNER JOIN 
@@ -17,6 +17,9 @@ WHERE
 AND 
     salary_year_avg IS NOT NULL
 GROUP BY
+
+
+
     skills
 ORDER BY
     avg_salary DESC
