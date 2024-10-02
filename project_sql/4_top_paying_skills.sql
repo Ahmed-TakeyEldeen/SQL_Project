@@ -17,9 +17,6 @@ WHERE
 AND 
     salary_year_avg IS NOT NULL
 GROUP BY
-
-
-
     skills
 ORDER BY
     avg_salary DESC
