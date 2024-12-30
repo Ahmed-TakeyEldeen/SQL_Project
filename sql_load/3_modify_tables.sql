@@ -43,9 +43,8 @@ WITH (FORMAT csv, HEADER true, DELIMITER ',', ENCODING 'UTF8');
 
 SELECT *
 FROM job_postings_fact
-LIMIT 100;
+LIMIT 50;
 
 SELECT *
 FROM company_dim
-LIMIT 100;
-
+LIMIT 50;
